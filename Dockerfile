@@ -4,4 +4,4 @@ RUN apk add --update --no-cache openjdk8-jre && gcloud components install cloud-
 
 EXPOSE 8080
 
-CMD gcloud beta emulators firestore start --host-port=localhost:8080
+CMD gcloud beta emulators firestore start --host-port=localhost:8080 --verbosity debug
